@@ -1,0 +1,161 @@
+/* .container { 
+    display:grid;
+    border: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-gap: 3px;
+} */
+
+
+h2{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 60px;
+    text-align: center;
+    margin:0%;
+    padding-inline-end: 2cm;
+    text-shadow: 2px 2px 2px gray;   }
+
+.container {
+    margin-top: 10px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    height: 650px;;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1.5fr 1.5fr 6fr 1fr;
+    
+}
+.timer{
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin:0%;
+  padding-inline-end: 1cm;
+  text-shadow: 2px 2px 2px gray;  
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+   }
+ .dog{animation: motion 0.4s linear 0s infinite alternate; padding-top: 0;}
+        
+
+@keyframes motion {
+	0% {padding-top: 0px;}
+	100% {padding-top: 2px;}
+}
+
+
+.icon{
+  margin-left:1.5cm;
+  margin-right:1cm;
+  height: 75px;
+  width: 75px;;
+}
+
+.header{
+    
+    grid-column: 1/-1;
+    justify-content: space-between;
+    
+ }
+.timer{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#name{
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-evenly;
+  grid-column: 1/-1;
+ 
+  }
+.start{
+  color: rgb(255, 200, 236); 
+  font-size: 19px; line-height: 25px; border-color:#bac68d; padding: 7px; border-radius: 39px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-color: #788A30;}
+
+.start:hover {
+  background: #788A30; }
+.start:active {
+  background: #788A30; }
+
+#content{
+     display: grid;
+     grid-column: 1/-1;
+     grid-area:'a a''a a';
+     }
+.footer{
+  grid-column:1/-1 ;
+}
+a{
+  font-size: 3px;
+}
+
+*{
+  border-radius: 15px;
+}
+
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+#myScore{
+  margin-left: 0.5cm;
+}
+.progressbar{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width : 600px;
+  height:20px;
+  background:gray;
+}
+.progress-inner{
+ width: 100%;
+ height: 100%;
+ position:absolute;
+}
+  
+.inner {
+  display:grid;
+  /* background:#bfdcf8; */
+  margin-top:0.5cm;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 140px 140px;
+  justify-content: center;
+  grid-gap: 0.5cm;
+  height:50vh;
+  width:60vw;
+  }
+  
+ html, body {
+  background-image: url("/img/stacked-steps-haikei.png");
+  /* background-color: #ffeead;  */
+  margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+  background-image: url("#");
+   /* background-color: #88d8b0; */
+} 
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+.wrong{
+ 
+}
+/* https://giphy.com/lazycorgihk */
+.false{
+  background-image:url(img/ezgif.com-gif-maker.png);
+}
