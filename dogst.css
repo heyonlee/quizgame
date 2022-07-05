@@ -131,7 +131,7 @@ a{
   }
   
  html, body {
-  background-image: url("/img/stacked-steps-haikei.png");
+  background-image: url("./img/stacked-steps-haikei.png");
   /* background-color: #ffeead;  */
   margin: 10px;
 }
